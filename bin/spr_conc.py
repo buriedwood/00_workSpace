@@ -21,7 +21,7 @@ def change_conc():
     combi = Combinatorial(list1, list2, list3)
 #    print(combi.compositions)
     comp_list = [x['elements']
-                  for x in combi.compositions]
+                 for x in combi.compositions]
     lines = ""
     for comp in comp_list:
         lines += "/".join(comp) + " run.sh\n"

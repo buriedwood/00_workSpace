@@ -51,7 +51,7 @@ class LinkedList(object):
             return cell.data
         return None
 
-    def insert(self, n, data): #pylint: disable=C0103
+    def insert(self, n, data):
         """データの挿入"""
         cell = self._nth(n - 1)
         if cell is not None:
@@ -59,7 +59,7 @@ class LinkedList(object):
             return data
         return None
 
-    def delete(self, n): #pylint: disable=C0103
+    def delete(self, n):
         """データの削除"""
         cell = self._nth(n - 1)
         if cell is not None and cell.link is not None:
