@@ -44,7 +44,7 @@ class LinkedList(object):
             cell = cell.link
         return None
 
-    def at(self, n): #pylint: disable=C0103
+    def at(self, n):
         """n番目の要素を求める"""
         cell = self._nth(n)
         if cell is not None:
